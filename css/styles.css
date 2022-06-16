@@ -1,15 +1,51 @@
+body {
+    font-family: 'Roboto',sans-serif ;
+    color: #212121;
+}
 
+a {
+    text-decoration: none;
+}
 
+li {
+    list-style-type: none;
+}
 
-div, button {
-    font-family: 'Roboto',sans-serif ;}
+p {
+    color: #757575;
+}
+
+footer {
+    background: #2F303A;
+}
 
 .logo-link {
-    text-decoration: none;
     color: #212121;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
 }
 
 .web-blue {
     color: #2196F3;
 }
+
+.header-link {
+    font-size: 14px;
+    color: #212121;
+    line-height: 16px;;
+}
+
+.grey-color {
+    color:#757575
+}
+
+.white-color {
+    color: #FFFFFF;
+}
+
+.footer-logo {
+    color: #FFFFFF;
+}
+
+
 
