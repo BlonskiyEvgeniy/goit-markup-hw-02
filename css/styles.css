@@ -14,14 +14,14 @@ body {
     --primary-text-color: #212121;
     --tittle-text-color: #757575;
     --accent-color: #2196F3;
-    
-
+    --primary-wh-color: #FFFFFF;
+    --bg-button-portfolio: #F5F4FA;
 }
 
 body {
     font-family: 'Roboto',sans-serif ;
     color: var(--primary-text-color);
-    background-color: #FFFFFF;
+    background-color: var(--primary-bg-color);
 }
 
 a {
@@ -53,11 +53,11 @@ footer {
 }
 
 .white-color {
-    color: #FFFFFF;
+    color: var(--primary-wh-color);
 }
 /* Логотип */
 .footer-logo {
-    color: #FFFFFF;
+    color: var(--primary-wh-color);
     font-family: sans-serif;
     font-size: 26px;
     font-family: 'Raleway';
@@ -92,21 +92,40 @@ footer {
     color: var(--primary-text-color)
 }
 
+.site-nav .header-link.current {
+    color: var(--accent-color);
+}
+
 /* main */
 .main {
     background-color: #2F303A;
 }
 .main-title {
-    color: #FFFFFF;
+    color: var(--primary-wh-color);
 }
+
+/* button */
 .button {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--primary-wh-color);
+    background-color: var(--accent-color);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
+}
+
+.button-portfolio {
+    color: var(--primary-text-color);
+    background-color: var(--bg-button-portfolio);  
+}
+
+.button-portfolio:hover {
+    color: var(--accent-color);
+}
+
+.button-portfolio:focus {
+    color: var(--accent-color);
 }
 
 /* Hero */
