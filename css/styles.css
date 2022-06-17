@@ -11,7 +11,7 @@ body {
 /* Фон футера #2F303A; */
 /* Фон кнопок #F5F4FA; */
 :root {
-    --primary-text-color: red;
+    --primary-text-color: #212121;
     --tittle-text-color: #757575;
     --accent-color: #2196F3;
     
