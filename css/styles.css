@@ -109,11 +109,11 @@ footer {
 .button {
     color: var(--primary-wh-color);
     background-color: var(--accent-color);
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
+    cursor: pointer;
    
 }
 
