@@ -16,6 +16,7 @@ body {
     --accent-color: #2196F3;
     --primary-wh-color: #FFFFFF;
     --bg-button-portfolio: #F5F4FA;
+   
 }
 
 body {
@@ -25,7 +26,11 @@ body {
 }
 
 .list {
+    list-style-type: none;
     text-decoration: none;
+}
+
+ul {
     list-style-type: none;
 }
 
@@ -37,10 +42,11 @@ a {
 li {
     list-style-type: none;
 }
- */
+ 
 p {
     color: var(--tittle-text-color);
 }
+*/
 
 footer {
     background: #2F303A;
@@ -97,12 +103,10 @@ footer {
     letter-spacing: 0.02em;   
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus  {
     color: var(--accent-color);
 }
-.nav-link:focus {
-    color: var(--accent-color);
-}
+
 
 .section-title {
     color: var(--primary-text-color)
@@ -129,6 +133,39 @@ footer {
 
 .main-title {
     color: var(--primary-wh-color);
+}
+
+.future-discription {
+    color: var(--tittle-text-color);
+}
+
+.team-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}               
+
+.team-position {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
+}
+
+.section-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* button */
@@ -230,9 +267,10 @@ footer {
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+    color: var(--primary-text-color);
 }
 
-.cards-description {
+.card-description {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
