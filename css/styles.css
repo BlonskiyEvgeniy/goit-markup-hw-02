@@ -19,12 +19,17 @@ body {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
 }
 
+.list {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* 
 a {
     text-decoration: none;
 }
@@ -32,7 +37,7 @@ a {
 li {
     list-style-type: none;
 }
-
+ */
 p {
     color: var(--tittle-text-color);
 }
@@ -40,21 +45,27 @@ p {
 footer {
     background: #2F303A;
 }
+.contact-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer:hover,:focus {
+        color: var(--accent-color)
+}
+
 
 .web-blue {
     color: var(--accent-color);
 }
 
-.grey-color {
-    color: var(--tittle-text-color);
-}
-
-.grey-color:hover,:focus {
-    color: var(--accent-color)
-}
-
-.white-color {
+.adress-link {
     color: var(--primary-wh-color);
+    font-style: normal;
 }
 /* Логотип */
 .footer-logo {
@@ -66,8 +77,8 @@ footer {
     font-weight: 700;
 }
 
-.logo-link {
-    color: #212121;
+.logo {
+    color: var(--primary-text-color);
     font-size: 26px;
     font-family: 'Raleway',sans-serif;
     font-style: normal;
@@ -76,16 +87,20 @@ footer {
 
 /* Site nav */
 
-.header-link {
+.nav-link {
     font-size: 14px;
-    color: #212121;
-    line-height: 16px;    
+    color: var(--primary-text-color);
+    line-height: 16px; 
+    font-weight: 500;      
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;   
 }
 
-.header-link:hover {
+.nav-link:hover {
     color: var(--accent-color);
 }
-.header-link:focus {
+.nav-link:focus {
     color: var(--accent-color);
 }
 
@@ -93,14 +108,25 @@ footer {
     color: var(--primary-text-color)
 }
 
-.site-nav .header-link.current {
+.site-nav .nav-link.current {
     color: var(--accent-color);
 }
 
-/* main */
-.main {
-    background-color: #2F303A;
+.contact-link {
+    color: var(--tittle-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-style: normal;
 }
+
+.contact-link:hover,:focus {
+    color: var(--accent-color)
+}
+
+/* main */
+
 .main-title {
     color: var(--primary-wh-color);
 }
@@ -117,11 +143,76 @@ footer {
    
 }
 
+/* Hero */
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    color: var(--primary-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:var(--primary-wh-color);
+}
+
+/* Business Solution */
+
+/* Peculiarities (особености) */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .future-title {
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+}
+
+.future-discription {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+/* Портфолио */
+
+/* Button Portfolio */
 .button-portfolio {
+    font-family: 'Roboto';
     color: var(--primary-text-color);
     background-color: var(--bg-button-portfolio);
     cursor: pointer;
-        
+    width: 84px;
+    height: 26px;
+    left: 598px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
 }
 
 .button-portfolio:hover {
@@ -132,14 +223,20 @@ footer {
     color: var(--accent-color);
 }
 
-/* Hero */
-
-.hero-title {
-    color: var(--primary-text-color);
+/* Cards */
+.card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
 }
 
-/* section */
-
-.section-title {
-    color: var(--primary-text-color); 
+.cards-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
 }
